@@ -1,7 +1,8 @@
-  body{
-    background: #f7f7;
-  }
-   @media (max-width: 767px) {
+body {
+    background-color: #D3D3D3;
+}
+
+@media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -18,19 +19,71 @@
 
 /* medium and up screens */
 @media (min-width: 768px) {
-    
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+        transform: translateX(25%);
     }
-    
-    .carousel-inner .carousel-item-start.active, 
+
+    .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+        transform: translateX(-25%);
     }
 }
 
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item {
+    display: block;
+    width: 100%; /* Card'lar küçük ekranlarda tam genişlikte olacak */
+  }
+
+  .card {
+    width: 100%; /* Küçük ekranlarda card'lar tam genişlikte olacak */
+  }
+}
+
 .carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.card-img img {
+    width: 100%;
+    display: block;
+}
+
+.tooltip-box {
+    display: none;
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 10;
+    white-space: nowrap;
+   
+}
+
+.card:hover .tooltip-box {
+    display: block;
+}
+
+.card-description {
+    padding: 10px;
+    background-color: #fff; 
+    color: #000; 
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
 }
