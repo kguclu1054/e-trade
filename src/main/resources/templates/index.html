@@ -7,36 +7,60 @@
    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">TechStore</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Ana Sayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Hakkında</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">İletişim</a>
-        </li>
-      </ul>
-      <div class="d-flex ms-auto" id="search-container">
-        <input class="form-control" type="search" placeholder="Ürün, kategori ve marka ara" aria-label="Search">
-      </div>
-    </div>
-  </div>
-</nav>
-
-
-  <div class="container">
-    <h1>Hoş Geldiniz!</h1>
-    <p>Burada ana sayfanızın içeriği yer alacak.</p>
-  </div>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">TechStore</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav me-auto">
+	        <li class="nav-item active">
+	          <a class="nav-link" href="index.html">Ana Sayfa</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Hakkında</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">İletişim</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex ms-auto" id="search-container">
+	        <input class="form-control me-2" type="search" placeholder="Ürün, kategori ve marka ara" aria-label="Search">
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	
+	<div class="carousel-container">
+	       <div class="carousel">
+	           <div class="slide">
+	               <img src="https://images.hepsiburada.net/banners/s/1/819-357/appbanner133807015074400042.png/format:webp" alt="Resim 1">
+	           </div>
+	           <div class="slide">
+	               <img src="https://images.hepsiburada.net/banners/s/1/819-357/category-sda-ocakmarkagunleriphilipsfritozhero-06-01133804032234138511.jpg/format:webp" alt="Resim 2">
+	           </div>
+	           <div class="slide">
+	               <img src="https://images.hepsiburada.net/banners/s/1/819-357/category-sda-ocakmarkagunleriroborockqrevohero-07-01133806305311477151.jpg/format:webp" alt="Resim 3">
+	           </div>
+			   <div class="slide">
+			   	   <img src="https://images.hepsiburada.net/banners/s/1/819-357/gra-187448-appbanner133803751558479889.png/format:webp" alt="Resim 1">
+			   </div>
+			   <div class="slide">
+				   <img src="https://images.hepsiburada.net/banners/s/1/819-357/gra-187784-appbanner133806312962689325.jpg/format:webp" alt="Resim 1">
+               </div>
+               <div class="slide">
+			       <img src="https://images.hepsiburada.net/banners/s/1/819-357/gra-187006-appbanner133801227785806711.jpg/format:webp" alt="Resim 1">
+	           </div>
+			   <div class="slide">
+			       <img src="https://images.hepsiburada.net/banners/s/1/424-185/category-bilg-ocakmarkagunlericaspermonitorhero-06-01133805851215953174.jpg/format:webp" alt="Resim 1">
+	           </div>
+	       </div>
+	       <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+	       <button class="next" onclick="moveSlide(1)">&#10095;</button>
+	   </div>
+	
 
 <div class="container-fluid text-center my-3">
     <div class="row">
