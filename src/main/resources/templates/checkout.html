@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sepetiniz</h1>
+        
+        <div class="row">
+            <div class="col-md-4" th:each="item : ${cart.items}">
+                <div class="card">
+                    <img th:src="@{/images/{img}(img=${item.product.imageUrl})}" class="card-img-top" alt="Ürün Resmi">
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${item.product.name}">Ürün Adı</h5>
+                        <p class="card-text" th:text="${item.product.description}">Ürün açıklaması...</p>
+                        <button class="btn btn-primary">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <h4>Toplam: <span th:text="${total}">0</span> TL</h4>
+        </div>
+
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
